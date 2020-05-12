@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grass-tile-2.png-80b584af68812734bacfdcc2e0429525.stex"
+path="res://.import/left1.png-5a691908462efe4ecdb9c231d8d88ea0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/grass-tile-2.png"
-dest_files=[ "res://.import/grass-tile-2.png-80b584af68812734bacfdcc2e0429525.stex" ]
+source_file="res://assets/characters/player/left1.png"
+dest_files=[ "res://.import/left1.png-5a691908462efe4ecdb9c231d8d88ea0.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

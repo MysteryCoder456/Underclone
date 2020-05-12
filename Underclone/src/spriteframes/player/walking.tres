@@ -1,0 +1,61 @@
+[gd_resource type="SpriteFrames" load_steps=17 format=2]
+
+[ext_resource path="res://assets/characters/player/left0.png" type="Texture" id=1]
+[ext_resource path="res://assets/characters/player/up0.png" type="Texture" id=2]
+[ext_resource path="res://assets/characters/player/right0.png" type="Texture" id=3]
+[ext_resource path="res://assets/characters/player/up1.png" type="Texture" id=4]
+[ext_resource path="res://assets/characters/player/up2.png" type="Texture" id=5]
+[ext_resource path="res://assets/characters/player/up3.png" type="Texture" id=6]
+[ext_resource path="res://assets/characters/player/down0.png" type="Texture" id=7]
+[ext_resource path="res://assets/characters/player/down1.png" type="Texture" id=8]
+[ext_resource path="res://assets/characters/player/down2.png" type="Texture" id=9]
+[ext_resource path="res://assets/characters/player/down3.png" type="Texture" id=10]
+[ext_resource path="res://assets/characters/player/right1.png" type="Texture" id=11]
+[ext_resource path="res://assets/characters/player/right2.png" type="Texture" id=12]
+[ext_resource path="res://assets/characters/player/right3.png" type="Texture" id=13]
+[ext_resource path="res://assets/characters/player/left1.png" type="Texture" id=14]
+[ext_resource path="res://assets/characters/player/left2.png" type="Texture" id=15]
+[ext_resource path="res://assets/characters/player/left3.png" type="Texture" id=16]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": false,
+"name": "idle left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": false,
+"name": "idle up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": false,
+"name": "idle right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "walking up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": false,
+"name": "idle down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "walking down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "walking right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "walking left",
+"speed": 5.0
+} ]
