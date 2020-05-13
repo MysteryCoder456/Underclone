@@ -1,20 +1,23 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://src/spriteframes/player/walking.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://src/scripts/player.gd" type="Script" id=1]
+[ext_resource path="res://src/spriteframes/player/walking.tres" type="SpriteFrames" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 9.5, 11 )
+extents = Vector2( 9.5, 10.6667 )
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="player" type="KinematicBody2D"]
+scale = Vector2( 3, 3 )
 collision_layer = 2
 collision_mask = 13
+script = ExtResource( 1 )
+speed = Vector2( 10000, 10000 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = ExtResource( 1 )
-animation = "walking up"
-frame = 2
+frames = ExtResource( 2 )
+animation = "idle down"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.5, -1 )
+position = Vector2( 0.5, 5 )
 shape = SubResource( 1 )
