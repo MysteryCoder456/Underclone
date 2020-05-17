@@ -37,7 +37,7 @@ animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "walking up",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 7 ) ],
 "loop": false,
@@ -47,15 +47,15 @@ animations = [ {
 "frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "walking down",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 3 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "walking right",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
 "loop": true,
 "name": "walking left",
-"speed": 5.0
+"speed": 10.0
 } ]
