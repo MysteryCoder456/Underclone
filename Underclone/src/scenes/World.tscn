@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://src/tilemaps/overworld_nature.tres" type="TileSet" id=1]
+[ext_resource path="res://src/tilesets/overworld_nature.tres" type="TileSet" id=1]
 [ext_resource path="res://src/actors/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/tilesets/overworld_structures.tres" type="TileSet" id=3]
 
 [node name="World" type="Node2D"]
 
@@ -15,3 +16,10 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 
 
 [node name="player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 206.066, 438.779 )
+
+[node name="structures" type="TileMap" parent="."]
+scale = Vector2( 3, 3 )
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 65554, 0, 0, 262145, 2, 0, 655372, 1, 0 )
