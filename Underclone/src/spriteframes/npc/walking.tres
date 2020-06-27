@@ -1,0 +1,47 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=2]
+
+[ext_resource path="res://assets/characters/npc/left0.png" type="Texture" id=1]
+[ext_resource path="res://assets/characters/npc/down0.png" type="Texture" id=2]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": false,
+"name": "idle left",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": false,
+"name": "idle up",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": false,
+"name": "idle right",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "walking up",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": false,
+"name": "idle down",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "walking down",
+"speed": 10.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "walking right",
+"speed": 10.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "walking left",
+"speed": 10.0
+} ]

@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/fonts/menu_button.tres" type="DynamicFont" id=1]
+[ext_resource path="res://src/animations/MenuTitleStartAnimation.tres" type="Animation" id=2]
+[ext_resource path="res://src/scenes/MenuButton.tscn" type="PackedScene" id=3]
+
+[node name="MenuScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_right = 1280.0
+margin_bottom = 50.0
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 1 )
+text = "UNDERCLONE"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/Label"]
+autoplay = "MenuTitleStartAnimation"
+anims/MenuTitleStartAnimation = ExtResource( 2 )
+
+[node name="Buttons" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 509.0
+margin_top = 318.0
+margin_right = 771.0
+margin_bottom = 455.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+custom_constants/separation = 25
+
+[node name="StartButton" parent="HBoxContainer/Buttons" instance=ExtResource( 3 )]
+text = "Start"
+scene_path = "res://src/scenes/World.tscn"
+
+[node name="ExitButton" parent="HBoxContainer/Buttons" instance=ExtResource( 3 )]
+margin_left = 25.0
+margin_top = 81.0
+margin_right = 237.0
+margin_bottom = 137.0
+text = "Exit"
+exit = true
